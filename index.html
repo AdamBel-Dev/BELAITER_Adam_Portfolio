@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio professionnel d'Adam BELAITER - Développeur Full Stack">
+  <title>Adam BELAITER | Développeur Full Stack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<header class="navbar">
+  <a href="#home" class="logo">Adam<span>.</span></a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" data-i18n="navHome">Accueil</a>
+    <a href="#about" data-i18n="navAbout">À propos</a>
+    <a href="#skills" data-i18n="navSkills">Compétences</a>
+    <a href="#education" data-i18n="navEducation">Formation</a>
+    <a href="#certifications" data-i18n="navCert">Certifications</a>
+    <a href="#contact" data-i18n="navContact">Contact</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="language-selector">
+      <button id="languageBtn" aria-label="Changer la langue">🇫🇷 FR ▾</button>
+      <div class="language-menu" id="languageMenu">
+        <button data-lang="fr">🇫🇷 Français</button>
+        <button data-lang="en">🇬🇧 English</button>
+        <button data-lang="ar">🇲🇦 العربية</button>
+      </div>
+    </div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero section" id="home">
+    <div class="hero-content reveal">
+      <p class="eyebrow" data-i18n="heroHello">👋 Bonjour, je suis</p>
+      <h1>Adam <span>BELAITER</span></h1>
+      <h2><span id="typedText"></span><span class="cursor">|</span></h2>
+      <p class="hero-description" data-i18n="heroDescription">
+        Passionné par la programmation, le développement web et la création de solutions numériques modernes.
+      </p>
+      <div class="hero-buttons">
+        <a href="#skills" class="btn primary" data-i18n="heroSkills">Voir mes compétences</a>
+        <a href="CV_BELAITER_Adam.docx" download class="btn secondary">📄 <span data-i18n="heroCV">Télécharger mon CV</span></a>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/adam-belaiter-54145a430/" target="_blank" rel="noopener">in LinkedIn</a>
+        <a href="mailto:adambelaiter.007@gmail.com">✉ Email</a>
+      </div>
+    </div>
+
+    <div class="hero-image-container reveal">
+      <div class="glow"></div>
+      <div class="image-frame">
+        <img src="profil.jpeg" alt="Adam BELAITER">
+      </div>
+      <div class="floating-card card-one">💻 <span>Full Stack</span></div>
+      <div class="floating-card card-two">🚀 <span>2026</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-heading reveal">
+      <p class="section-tag" data-i18n="aboutTag">À PROPOS</p>
+      <h2 data-i18n="aboutTitle">Construire des solutions, apprendre chaque jour.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card glass reveal">
+        <span class="number">01</span>
+        <h3 data-i18n="aboutCardTitle">Mon profil</h3>
+        <p data-i18n="aboutText">
+          Étudiant en formation de Technicien Spécialisé en Développement Informatique, passionné par la programmation et la conception d'applications. Je possède des connaissances en développement logiciel, développement web, bases de données et modélisation UML/Merise.
+        </p>
+      </div>
+
+      <div class="about-highlights reveal">
+        <div class="highlight glass">
+          <span>🎯</span>
+          <div><h3 data-i18n="highlight1Title">Motivé</h3><p data-i18n="highlight1Text">Toujours prêt à apprendre et évoluer.</p></div>
+        </div>
+        <div class="highlight glass">
+          <span>💡</span>
+          <div><h3 data-i18n="highlight2Title">Curieux</h3><p data-i18n="highlight2Text">Passionné par les nouvelles technologies.</p></div>
+        </div>
+        <div class="highlight glass">
+          <span>⚡</span>
+          <div><h3 data-i18n="highlight3Title">Créatif</h3><p data-i18n="highlight3Text">J'aime transformer les idées en solutions.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-heading reveal">
+      <p class="section-tag" data-i18n="skillsTag">COMPÉTENCES</p>
+      <h2 data-i18n="skillsTitle">Mes technologies</h2>
+      <p data-i18n="skillsSubtitle">Les technologies et outils avec lesquels je développe et j'apprends.</p>
+    </div>
+
+    <div class="skills-grid">
+      <article class="skill-category glass reveal">
+        <div class="category-icon">🌐</div>
+        <h3>Frontend</h3>
+        <div class="skill-list">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </article>
+
+      <article class="skill-category glass reveal">
+        <div class="category-icon">⚙️</div>
+        <h3 data-i18n="programming">Programmation</h3>
+        <div class="skill-list">
+          <span>Python</span><span>C</span><span>C#</span><span>VB.NET</span><span>Java</span><span>PHP</span>
+        </div>
+      </article>
+
+      <article class="skill-category glass reveal">
+        <div class="category-icon">🗄️</div>
+        <h3 data-i18n="database">Bases de données</h3>
+        <div class="skill-list">
+          <span>SQL</span><span>MySQL</span><span>SQL Server</span>
+        </div>
+      </article>
+
+      <article class="skill-category glass reveal">
+        <div class="category-icon">🛠️</div>
+        <h3 data-i18n="tools">Outils & Modélisation</h3>
+        <div class="skill-list">
+          <span>Visual Studio</span><span>VS Code</span><span>UML</span><span>Merise</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="section-heading reveal">
+      <p class="section-tag" data-i18n="educationTag">FORMATION</p>
+      <h2 data-i18n="educationTitle">Mon parcours</h2>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-line"></div>
+      <article class="timeline-item glass">
+        <div class="timeline-dot"></div>
+        <p class="date">2024 — 2026</p>
+        <h3>🎓 <span data-i18n="degree">Technicien Spécialisé en Développement Informatique</span></h3>
+        <p>MIAGE – Rabat Menzeh</p>
+        <span class="location">📍 Rabat, Maroc</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <div class="section-heading reveal">
+      <p class="section-tag" data-i18n="certTag">CERTIFICATIONS</p>
+      <h2 data-i18n="certTitle">Apprentissage & Certifications</h2>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card glass reveal"><span>🏅</span><p>IBM SkillsBuild</p><h3>Make Agentic AI Work for You</h3></div>
+      <div class="cert-card glass reveal"><span>🤖</span><p>IBM SkillsBuild</p><h3>AI Fundamentals: Foundations for Understanding AI</h3></div>
+      <div class="cert-card glass reveal"><span>💻</span><p>IBM SkillsBuild</p><h3>Code Generation and Optimization Using IBM Granite</h3></div>
+    </div>
+  </section>
+
+  <section class="section" id="languages">
+    <div class="section-heading reveal">
+      <p class="section-tag" data-i18n="languagesTag">LANGUES</p>
+      <h2 data-i18n="languagesTitle">Communication internationale</h2>
+    </div>
+    <div class="languages-grid reveal">
+      <div class="language-card glass"><span>🇲🇦</span><h3 data-i18n="arabic">العربية</h3><p data-i18n="native">Langue maternelle</p></div>
+      <div class="language-card glass"><span>🇫🇷</span><h3>Français</h3><p>B2</p></div>
+      <div class="language-card glass"><span>🇬🇧</span><h3>English</h3><p>B1</p></div>
+    </div>
+  </section>
+
+  <section class="section contact-section" id="contact">
+    <div class="contact-box glass reveal">
+      <p class="section-tag" data-i18n="contactTag">CONTACT</p>
+      <h2 data-i18n="contactTitle">Travaillons ensemble.</h2>
+      <p data-i18n="contactText">Vous avez une opportunité, un projet ou souhaitez simplement échanger ? Contactez-moi.</p>
+      <div class="contact-buttons">
+        <a class="btn primary" href="mailto:adambelaiter.007@gmail.com">✉ adambelaiter.007@gmail.com</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/adam-belaiter-54145a430/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a href="#home" class="logo">Adam<span>.</span></a>
+  <p>© <span id="year"></span> Adam BELAITER. <span data-i18n="rights">Tous droits réservés.</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
